@@ -1,0 +1,95 @@
+<header class="navbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler hidden-lg-up" type="button" mobile-nav-toggle>&#9776;</button>
+        <a class="navbar-brand" href="#"></a>
+        <ul class="nav navbar-nav hidden-md-down">
+            <li class="nav-item">
+                <a class="nav-link navbar-toggler sidebar-toggle" href="#">&#9776;</a>
+            </li>
+        </ul>
+        <div class="hidden-md-down pull-right">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/aboutus']">About Us &nbsp;&nbsp;&nbsp;</a>
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/contactus']">Contact Us &nbsp;&nbsp;&nbsp;</a>
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/location']">Location &nbsp;&nbsp;&nbsp;</a>
+        </div>
+    </div>
+</header>
+
+<div class="sidebar">
+    <nav class="sidebar-nav">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']">Welcome</a>
+            </li>
+            <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle">Panels/Enclosures</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/soundscreen']">Panel Systems</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/unihousing']">Pressurized Enclosures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/qhaven']">Personnel Enclosures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/heatscreen']">Oven Panels/Enclosures</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/sounpak']">Silencers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/tools']">Silencer Selector Tools</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/fibersorb']">Curtain Systems</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/diy']">DIY Noise Control</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/productlit']">Literature</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/customers']">Customers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/aboutus']">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/contactus']">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/location']">Location</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Main content -->
+<main class="main">
+
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb">
+        <breadcrumbs></breadcrumbs>
+    </ol>
+
+    <div class="container-fluid">
+        <router-outlet></router-outlet>
+    </div>
+    <!-- /.conainer-fluid -->
+</main>
+
+<footer class="footer">
+    <span>
+        <p class="text-xs-center">
+            &copy; {{year}} <a href="http://mcgillairsilence.com">McGill AirSilence <small>LLC</small></a> — Family owned and operated since 1951
+        </p>
+    </span>
+    <span class="float-xs-right">
+        
+    </span>
+</footer>
