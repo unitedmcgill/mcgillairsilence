@@ -52,6 +52,7 @@ td {
 th {
   border:1px solid black;
   background-color:#589CBF;
+  text-align: center;
 }
 
 
@@ -364,4 +365,8 @@ p.no-bottom-space{
 ul.no-top-space{
   margin-top: 0px;
   padding-top: 0px;
+}
+
+ul.text-left{
+  text-align: left;
 }
