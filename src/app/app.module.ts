@@ -14,6 +14,7 @@ import { SIDEBAR_TOGGLE_DIRECTIVES }    from './shared/sidebar.directive';
 import { AsideToggleDirective }         from './shared/aside.directive';
 import { BreadcrumbsComponent }         from './shared/breadcrumb.component';
 import { LoaderService }                from './services/loader.service';
+import {AnalyticsService }              from "./services/analytics.service";
 
 // Routing Module
 import { AppRoutingModule }             from './app.routing';
@@ -49,6 +50,7 @@ export function initConfig(config: ConfigService){
     providers: [
         LoaderService,
         ConfigService,
+        AnalyticsService,
         {
             provide: APP_INITIALIZER,
             useFactory: initConfig,
