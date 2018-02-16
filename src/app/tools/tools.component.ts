@@ -688,7 +688,8 @@ export class ToolsComponent implements OnInit {
     freq8 : 0,
     elbow : this.yesnoInt[0].value,
     type : this.roundSilencerTypes[3].value,
-    silencers : []
+    silencers : [], 
+    invalid : null
   };
 
   constructor( private toolsService: ToolsService) {
